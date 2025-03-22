@@ -1,12 +1,12 @@
 {
-  "domain": "viomise",
+  "domain": "miio2",
   "name": "Viomi SE",
   "codeowners": ["@nqkdev", "@KrzysztofHajdamowicz", "@DominikWrobel"],
   "config_flow": true,
   "dependencies": ["sensor"],
-  "documentation": "https://github.com/DominikWrobel/viomise",
+  "documentation": "https://github.com/DominikWrobel/miio2",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/DominikWrobel/viomise/issues",
+  "issue_tracker": "https://github.com/DominikWrobel/miio2/issues",
   "requirements": [
     "construct==2.10.70",
     "python-miio==0.5.12"
