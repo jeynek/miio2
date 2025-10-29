@@ -129,7 +129,6 @@ SUPPORT_XIAOMI = (
     | VacuumEntityFeature.FAN_SPEED
     | VacuumEntityFeature.LOCATE
     | VacuumEntityFeature.SEND_COMMAND
-    | VacuumEntityFeature.BATTERY
     | VacuumEntityFeature.START
 )
 
@@ -316,11 +315,7 @@ class MiroboVacuum2(StateVacuumEntity):
 #                return None
 #        return None
 
-    @property
-    def battery_level(self):
-        """Return the battery level of the vacuum cleaner."""
-        if self.vacuum_state is not None:
-            return self.vacuum_state['battary_life']  # Keep using misspelled property for device value
+
 
     @property
     def fan_speed(self):
