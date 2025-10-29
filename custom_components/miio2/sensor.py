@@ -116,7 +116,7 @@ class XiaomiVacuumBatterySensor(SensorEntity):
                 
         except Exception as exc:
             _LOGGER.error("Error getting battery attributes: %s", exc)
-
+            
         return attributes
 
     @property
