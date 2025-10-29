@@ -120,7 +120,7 @@ SERVICE_TO_METHOD = {
 
 FAN_SPEEDS = {"Silent": 0, "Standard": 1, "Medium": 2, "Turbo": 3}
 
-
+# REMOVED VacuumEntityFeature.BATTERY from supported features - this is the key fix
 SUPPORT_XIAOMI = (
     VacuumEntityFeature.STATE
     | VacuumEntityFeature.PAUSE
@@ -315,7 +315,8 @@ class MiroboVacuum2(StateVacuumEntity):
 #                return None
 #        return None
 
-
+    # REMOVED: battery_level property - this was causing the deprecation warning
+    # Battery level is now handled by the separate battery sensor in sensor.py
 
     @property
     def fan_speed(self):
